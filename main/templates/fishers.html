@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishers</title>
+    <!-- <link rel="stylesheet" href="fishers.css">  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='fishers.css') }}"> 
+    <!-- <link rel="stylesheet" href="main/static/fishers.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="ipynb" href="PD2.ipynb">
+    
+</head>
+
+<body>
+    <header>
+        <div class="head1">
+            <div class="box1"></div>
+            <div class="box2">
+                <h2 class="typed">Phishing Detector</h2>
+            </div>
+            <div class="box3"></div>
+        </div>
+    </header>
+    <main>
+        <div class="mainn">
+            <div class="main1">
+
+                <div class="m2">
+                    <div class="m3">
+                        <h2>Phishing Link (URL) Checker</h2>
+                    </div>
+                    <div class="m4">Detect phishing or fraudulent links via an ML-powered phishing link
+                        checker.
+                    </div><br><br>
+                    <div class="url"><input placeholder="Paste URL Here" type="url" style="height: 10vh;width:40vw ;">
+                    </div>
+                    <div class="submit" onclick="submitted()"><input type="submit"
+                            style="height: 30px;width:70px;background-color: #402b5b;color:white;"></div>
+                    <span class="i1" id="i1"></span>
+                    <div id="result-message" ></div>
+                    <div id="result-message2" ></div>
+                    <div id="loading-spinner" class="spinner"></div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main2">
+            <div class="heading">
+                <div class="heading1">
+                    <h1>About Phishing</h1>
+                </div>
+            </div>
+            <div class="info1">
+                <div class="image1"></div>
+                <div class="content1">Phishing attacks are fraudulent emails, text messages, phone calls or web
+                    sites designed to trick users into downloading malware, sharing sensitive information or
+                    personal data (e.g., Social Security and credit card numbers, bank account numbers, login
+                    credentials), or taking other actions that expose themselves or their organizations to
+                    cybercrime.
+                    Successful phishing attacks often lead to identity theft, credit card fraud, ransomware attacks,
+                    data breaches, and huge financial losses for individuals and corporations.</div>
+            </div>
+            <div class="info2">
+                <div class="image2"></div>
+                <div class="content2"> The phishing link and URL checker tool helps you detect malicious links in
+                    emails, text messages, and other online content. By scanning any links for suspicious patterns,
+                    our AI algorithm can determine if it's a phishing scam or a legitimate source.
+                    Our phishing site checker analyzes the link and compares it to a database of known phishing
+                    websites. If the link is identified as suspicious, the tool will alert you</div>
+            </div>
+            <div class="info3">
+                <div class="image3"></div>
+                <div class="content3">
+                    With an average of $136 lost per phishing attack, this amounts to $44.2 million stolen by cyber
+                    criminals through phishing attacks in 2021.
+                    Phishing attacks largely target victims through emails. In 2021, there was a global average of
+                    16.5 leaked emails per 100 internet users.
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="about">
+                <h2>About us:</h2><br>
+                Team Fishers: Dedicated Students in the fight against phishing, committed to safeguarding your online
+                security.
+            </div>
+            <div class="contact">
+                <h2>Contact us:</h2><br>
+                <ul>
+                    <li>Sneha<a style="color: orange;" href="mailto:sbayanab@gitam.in">(sbayanab@gitam.in)</a></li>
+                    <li>Keerthi<a style="color: orange;" href="mailto:mummiti@gitam.in">(mummiti@gitam.in)</a></li>
+                    <li>Abhishek<a style="color: orange;" href="mailto:akarthik2@gitam.in">(akarthik2@gitam.in)</a></li>
+                    <li>Punit<a style="color: orange;" href="mailto:pjavvaji@gitam.in">(pjavvaji@gitam.in)</a></li>
+                    <li>Helly<a style="color: orange;" href="mailto:hkhatri@gitam.in">(hkhatri@gitam.in)</a></li>
+                    <li>Daksh<a style="color: orange;" href="mailto:mdaksh@gitam.in">(mdaksh@gitam.in)</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="main/fishers.js"></script> -->
+    <!-- <script src="{{ url_for('static', filename='fishers.js') }}"></script> -->
+
+</body>
+      
+    <script src="{{ url_for('static', filename='fishers.js') }}"></script>
+
+</html>
